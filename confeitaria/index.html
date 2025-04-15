@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cake Shop</title>
+  <link rel="stylesheet" href="home.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/eedbcd0c96.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section id="header">
+    <div class="logo">
+      <a href="#" onclick="window.location.href='index.html';">
+        <img src="imgs/Tanisha.png" alt="" class="imglogo" />
+      </a>
+    </div>
+
+    <div>
+      <ul id="navbar">
+        <li>
+          <a href="index.html" class="active">Casa</a>
+        </li>
+
+        <li>
+          <a href="shop.html">Loja</a>
+        </li>
+
+        <li>
+          <a href="about.html">Sobre nós</a>
+        </li>
+
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+
+        <div class="js-shop-quantity pro-quantity"></div>
+        <li>
+          <i id="shopbag" class="fa-sharp fa-solid fa-cart-shopping js-cart-click"></i>
+        </li>
+        <a href="#" id="close" onclick="remove()"><i class="fa-solid fa-xmark"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <div class="js-shop-quantity pro-quantity"></div>
+      <i class="fa-sharp fa-solid fa-cart-shopping js-cart-click"></i>
+      <i id="bar" class="fas fa-outdent" onclick="show()"></i>
+    </div>
+  </section>
+
+  <section id="secao1">
+    <h4>Bolos em oferta</h4>
+    <h2>Super desconto</h2>
+    <h1>Em todos os produtos !!!</h1>
+    <p>Economize com os nossos descontos.</p>
+    <button>Compre agora</button>
+  </section>
+
+
+
+  <section id="produto1" class="secao-p1">
+    <h2>OS MAIS VENDIDOS</h2>
+    <p>Bolos deliciosos a preços acessíveis</p>
+    <div class="pro-cont js-pro-cont"></div>
+  </section>
+
+  <section id="banner">
+    <h2>Delicias da casa</h2>
+
+  </section>
+
+
+  <section id="banner3" class="secao-p1">
+    <div class="bannerbox">
+      <h2>Cupcakes</h2>
+      <h3>Cupcakes do sabor que preferir</h3>
+    </div>
+
+    <div class="bannerbox">
+      <h2>Donuts</h2>
+      <h3>Flavoured Donuts</h3>
+    </div>
+
+    <div class="bannerbox">
+      <h2>Brownies</h2>
+      <h3>Delicioso Brownies de chocolate</h3>
+    </div>
+  </section>
+
+  <section id="newslater">
+    <div class="newstxt">
+
+    </div>
+
+  </section>
+
+
+
+  <script src="scripts/cart.js"></script>
+  <script src="scripts/products.js"></script>
+  <script src="home.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAhlTH3DzTKuaibs1nXGKLlZV8kBoARI14",
+      authDomain: "confeitaria-cbfd3.firebaseapp.com",
+      projectId: "confeitaria-cbfd3",
+      storageBucket: "confeitaria-cbfd3.firebasestorage.app",
+      messagingSenderId: "767405284861",
+      appId: "1:767405284861:web:840f652adbb6fbbf324d94"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</body>
+
+</html>
