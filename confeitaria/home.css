@@ -659,7 +659,7 @@
   }
   
   /* blog page */
-  .blogheader {
+  /*.blogheader {
     background-image: url("./imgs/blogbg.jpeg");
   }
   
@@ -703,7 +703,7 @@
     left: 0;
     position: absolute;
     top: -45px;
-  }
+  }*/
   
   /* About us page */
   .aboutheader {

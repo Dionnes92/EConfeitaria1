@@ -22,9 +22,9 @@
   {
     id: 'PRO1234103',
     image:'imgs/chocolate.jpg',
-    name:'Chocolate Cake',
+    name:' Bolo de Chocolate',
     quantity: 1,
-    price: 560
+    price:0
   },
   {
     id: 'PRO1234104',
